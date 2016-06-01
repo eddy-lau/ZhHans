@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ZhHans'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of ZhHans.'
+  s.summary          = 'Traditional Chinese to Simplified Chinese conversion library'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,17 +18,18 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+A easy to use and fast Objective-C helper library to convert Traditional Chinese String to Simplified Chinese String.
+e.g. ZH("繁體") -> "繁体"
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/ZhHans'
+  s.homepage         = 'https://github.com/eddy-lau/ZhHans'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Eddie Lau' => 'eddie@touchutility.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/ZhHans.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/eddy-lau/ZhHans.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '7.0'
 
   s.source_files = 'ZhHans/Classes/**/*'
   
@@ -36,7 +37,8 @@ TODO: Add long description of the pod here.
   #   'ZhHans' => ['ZhHans/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'Pod/Classes/*.h'
+  s.private_header_files = 'Pod/Classes/{T2S.h,ZhHansTable.h}'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
