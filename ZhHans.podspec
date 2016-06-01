@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZhHans'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'Traditional Chinese to Simplified Chinese conversion library'
 
 # This description is used to generate tags and improve search results.
@@ -37,8 +37,8 @@ e.g. ZH("繁體") -> "繁体"
   #   'ZhHans' => ['ZhHans/Assets/*.png']
   # }
 
-  s.public_header_files = 'Pod/Classes/*.h'
-  s.private_header_files = 'Pod/Classes/{T2S.h,ZhHansTable.h}'
+  s.public_header_files = 'ZhHans/Classes/*.h'
+  s.private_header_files = 'ZhHans/Classes/{T2S.h,ZhHansTable.h}'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
