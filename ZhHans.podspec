@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZhHans'
-  s.version          = '0.0.3'
+  s.version          = '0.1.0'
   s.summary          = 'Traditional Chinese to Simplified Chinese conversion library'
 
 # This description is used to generate tags and improve search results.
@@ -30,6 +30,7 @@ e.g. ZH("繁體") -> "繁体"
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '7.0'
+  s.osx.deployment_target = '10.8'
 
   s.source_files = 'ZhHans/Classes/**/*'
   
