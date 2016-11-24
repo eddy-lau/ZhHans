@@ -10,15 +10,15 @@
 
 @interface ZhHansHelper : NSObject
 
-+ (void) setPreferredEncoding:(NSString *)encoding;
-+ (NSString *) preferredEncoding;
-+ (NSString *) encodedStringFromZhHantString:(NSString *)tcString;
++ (void) setPreferredEncoding:(NSString * _Nonnull)encoding;
++ (NSString * _Nonnull) preferredEncoding;
++ (NSString * _Nonnull) encodedStringFromZhHantString:(NSString * _Nonnull)tcString;
 
 @end
 
-extern NSString *kZhHantEncoding;
-extern NSString *kZhHansEncoding;
-extern NSString *_zh(NSString *t);
+extern NSString * _Nonnull kZhHantEncoding;
+extern NSString * _Nonnull kZhHansEncoding;
+extern NSString * _Nonnull _zh(NSString * _Nonnull t);
 
 #define ZH_HANT kZhHantEncoding
 #define ZH_HANS kZhHansEncoding
@@ -27,5 +27,5 @@ extern NSString *_zh(NSString *t);
 #define IS_HANT ([ZhHansHelper preferredEncoding]==kZhHantEncoding)
 #define IS_HANS ([ZhHansHelper preferredEncoding]==kZhHansEncoding)
 
-extern NSString *ZhEncodingDidChangeNotification;
+extern NSString * _Nonnull ZhEncodingDidChangeNotification;
 

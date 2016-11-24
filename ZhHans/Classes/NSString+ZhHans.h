@@ -11,6 +11,6 @@
 
 @interface NSString (ZhHans)
 
-- (NSString *) convertToZhHans;
+- (NSString * _Nonnull) convertToZhHans;
 
 @end
