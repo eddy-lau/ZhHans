@@ -79,7 +79,7 @@ static NSDictionary *extraTable2 = nil;
       @"彷彿":@"仿佛",
       @"覆轍":@"覆辙",
       @"鍛鍊":@"锻炼",
-      @"痳瘋":@"麻风"
+      @"痲瘋":@"麻风"
     };
     
     return extraTable2;
