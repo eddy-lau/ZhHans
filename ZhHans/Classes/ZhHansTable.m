@@ -54,7 +54,8 @@ static NSDictionary *extraTable = nil;
         @"甦":@"苏",
         @"姪":@"侄",
         @"餵":@"喂",
-        @"跨":@"跨"
+        @"跨":@"跨",
+        @"譭":@"毀"
     };
     
     return extraTable;
@@ -79,7 +80,9 @@ static NSDictionary *extraTable2 = nil;
       @"彷彿":@"仿佛",
       @"覆轍":@"覆辙",
       @"鍛鍊":@"锻炼",
-      @"痲瘋":@"麻风"
+      @"痲瘋":@"麻风",
+      @"傾覆":@"傾覆",
+      @"覆亡":@"覆亡"
     };
     
     return extraTable2;
