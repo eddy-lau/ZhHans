@@ -55,7 +55,8 @@ static NSDictionary *extraTable = nil;
         @"姪":@"侄",
         @"餵":@"喂",
         @"跨":@"跨",
-        @"譭":@"毀"
+        @"譭":@"毀",
+        @"鐏":@"鐏"
     };
     
     return extraTable;
