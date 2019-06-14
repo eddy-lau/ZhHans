@@ -16,6 +16,7 @@
 + (NSString *) T2S:(unichar)t;
 + (NSDictionary *) extraDictionary;
 + (NSDictionary *) extraDictionary2;
++ (NSDictionary *) extraDictionary4;
 
 
 @end

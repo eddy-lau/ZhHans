@@ -15,10 +15,23 @@
     
     NSDictionary *extraDict = [ZhHansTable extraDictionary];
     NSDictionary *extraDict2 = [ZhHansTable extraDictionary2];
-    
+    NSDictionary *extraDict4 = [ZhHansTable extraDictionary4];
+
     NSUInteger len = [self length];
     NSMutableString *result = [NSMutableString stringWithCapacity:len];
     for (NSInteger i = 0; i<len; i++) {
+        
+        if (i + 3 < len) {
+            
+            NSString *tStr = [self substringWithRange:NSMakeRange(i, 4)];
+            NSString *sStr = extraDict4[tStr];
+            if (sStr) {
+                [result appendString:sStr];
+                i+=3;
+                continue;
+            }
+            
+        }
         
         if (i + 1 < len) {
             

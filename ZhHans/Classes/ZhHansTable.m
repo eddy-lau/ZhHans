@@ -58,6 +58,7 @@ static NSDictionary *extraTable = nil;
         @"譭":@"毀",
         @"鐏":@"鐏",
         @"鬨":@"哄",
+        @"崙":@"仑"
     };
     
     return extraTable;
@@ -87,10 +88,27 @@ static NSDictionary *extraTable2 = nil;
       @"覆亡":@"覆亡",
       @"反覆":@"反覆",
       @"痳瘋":@"麻风",
-      @"顛覆":@"顛覆"
+      @"顛覆":@"顛覆",
+      @"覆函":@"覆函"
     };
     
     return extraTable2;
+}
+    
+static NSDictionary *extraTable4 = nil;
+    
++ (NSDictionary *) extraDictionary4 {
+    
+    if (extraTable4) {
+        return extraTable4;
+    }
+    
+    extraTable4 =
+    @{
+      @"翻天覆地":@"翻天覆地"
+    };
+    
+    return extraTable4;
 }
 
 @end
