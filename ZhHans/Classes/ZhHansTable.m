@@ -91,7 +91,8 @@ static NSDictionary *extraTable2 = nil;
       @"反覆":@"反覆",
       @"痳瘋":@"麻风",
       @"顛覆":@"顛覆",
-      @"覆函":@"覆函"
+      @"覆函":@"覆函",
+      @"覆沒":@"覆沒"
     };
     
     return extraTable2;
