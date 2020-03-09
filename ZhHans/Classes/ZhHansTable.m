@@ -92,7 +92,9 @@ static NSDictionary *extraTable2 = nil;
       @"痳瘋":@"麻风",
       @"顛覆":@"顛覆",
       @"覆函":@"覆函",
-      @"覆沒":@"覆沒"
+      @"覆沒":@"覆沒",
+      @"覆蓋":@"覆盖",
+      @"抽瘋":@"抽风"
     };
     
     return extraTable2;
@@ -108,7 +110,8 @@ static NSDictionary *extraTable4 = nil;
     
     extraTable4 =
     @{
-      @"翻天覆地":@"翻天覆地"
+      @"翻天覆地":@"翻天覆地",
+      @"翻來覆去":@"翻来覆去"
     };
     
     return extraTable4;
