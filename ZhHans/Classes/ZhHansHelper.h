@@ -13,6 +13,7 @@
 + (void) setPreferredEncoding:(NSString *)encoding;
 + (NSString *) preferredEncoding;
 + (NSString *) encodedStringFromZhHantString:(NSString *)tcString;
++ (void) setAppGroupID:(NSString *)appGroupID;
 
 @end
 

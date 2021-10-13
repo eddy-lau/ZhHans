@@ -17,26 +17,38 @@ NSString *kZhHansEncoding = @"zh-Hans";
 NSString *ZhEncodingDidChangeNotification = @"ZhEncodingDidChangeNotification";
 
 static NSString *preferredEncoding;
+static NSString *appGroupID = nil;
 
 @implementation ZhHansHelper
+
++ (NSUserDefaults *) userDefaults {
+    if (appGroupID == nil) {
+        return [NSUserDefaults standardUserDefaults];
+    } else {
+        return [[NSUserDefaults alloc] initWithSuiteName:appGroupID];
+    }
+}
 
 + (NSString *) preferredEncoding {
     
     if (preferredEncoding == NULL) {
         
+        NSUserDefaults *userDefaults = [self userDefaults];
+        
         NSString *sysLanguage = [[NSLocale preferredLanguages] objectAtIndex:0];
         
-        NSString *encoding = [[NSUserDefaults standardUserDefaults] valueForKey:kPrefKey];
+        NSString *encoding = [userDefaults valueForKey:kPrefKey];
         if ([encoding isEqualToString:ZH_HANT]) {
             preferredEncoding = ZH_HANT;
         } else if ([encoding isEqualToString:ZH_HANS]) {
             preferredEncoding = ZH_HANS;
         }
         
-        NSString *savedSystemEncoding = [[NSUserDefaults standardUserDefaults] valueForKey:kSysEncodingKey];
+        NSString *savedSystemEncoding = [userDefaults valueForKey:kSysEncodingKey];
         if (![savedSystemEncoding isEqualToString:sysLanguage]) {
             preferredEncoding = nil;
-            [[NSUserDefaults standardUserDefaults] setValue:sysLanguage forKey:kSysEncodingKey];
+            [userDefaults setValue:sysLanguage forKey:kSysEncodingKey];
+            [userDefaults synchronize];
         }
         
         if (preferredEncoding == nil) {
@@ -68,7 +80,9 @@ static NSString *preferredEncoding;
             preferredEncoding = ZH_HANT;
         }
         
-        [[NSUserDefaults standardUserDefaults] setValue:preferredEncoding forKey:kPrefKey];
+        NSUserDefaults *userDefaults = [self userDefaults];
+        [userDefaults setValue:preferredEncoding forKey:kPrefKey];
+        [userDefaults synchronize];
         
     }
 }
@@ -91,6 +105,10 @@ static NSString *preferredEncoding;
         return tcString;
     }
     
+}
+
++ (void) setAppGroupID:(NSString *)_appGroupID {
+    appGroupID = [_appGroupID copy];
 }
 
 @end
