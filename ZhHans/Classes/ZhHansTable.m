@@ -98,7 +98,8 @@ static NSDictionary *extraTable2 = nil;
       @"覆蓋":@"覆盖",
       @"抽瘋":@"抽风",
       @"遮覆":@"遮覆",
-      @"覆舟":@"覆舟"
+      @"覆舟":@"覆舟",
+      @"覆庇":@"覆庇",
     };
     
     return extraTable2;
