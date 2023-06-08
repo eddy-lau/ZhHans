@@ -60,7 +60,8 @@ static NSDictionary *extraTable = nil;
         @"鬨":@"哄",
         @"崙":@"仑",
         @"慾":@"欲",
-        @"騌":@"鬃"
+        @"騌":@"鬃",
+        @"箇":@"个"
     };
     
     return extraTable;
