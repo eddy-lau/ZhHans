@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZhHans'
-  s.version          = '1.5.1'
+  s.version          = '1.6.0'
   s.summary          = 'Traditional Chinese to Simplified Chinese conversion library'
   s.description      = <<-DESC
 A easy to use and fast Objective-C helper library to convert Traditional Chinese String to Simplified Chinese String.
@@ -20,7 +20,7 @@ e.g. ZH("繁體") -> "繁体"
   s.author           = { 'Eddie Lau' => 'eddie@touchutility.com' }
   s.source           = { :git => 'https://github.com/eddy-lau/ZhHans.git', :tag => s.version.to_s }
   s.platform         = :ios
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '12.0'
 
   s.source_files = 'ZhHans/Classes/**/*'
 
