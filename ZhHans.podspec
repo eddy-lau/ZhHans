@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZhHans'
-  s.version          = '1.6.0'
+  s.version          = '1.6.1'
   s.summary          = 'Traditional Chinese to Simplified Chinese conversion library'
   s.description      = <<-DESC
 A easy to use and fast Objective-C helper library to convert Traditional Chinese String to Simplified Chinese String.

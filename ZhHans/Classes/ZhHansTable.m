@@ -117,7 +117,8 @@ static NSDictionary *extraTable4 = nil;
     extraTable4 =
     @{
       @"翻天覆地":@"翻天覆地",
-      @"翻來覆去":@"翻来覆去"
+      @"翻來覆去":@"翻来覆去",
+      @"魯格曼著":@"鲁格曼著",
     };
     
     return extraTable4;
