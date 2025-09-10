@@ -61,7 +61,12 @@ static NSDictionary *extraTable = nil;
         @"崙":@"仑",
         @"慾":@"欲",
         @"騌":@"鬃",
-        @"箇":@"个"
+        @"箇":@"个",
+        @"稭":@"秸",
+        @"洩":@"泄",
+        @"癒":@"愈",
+        @"夥":@"伙",
+        @"迴":@"回",
     };
     
     return extraTable;
@@ -101,6 +106,9 @@ static NSDictionary *extraTable2 = nil;
       @"遮覆":@"遮覆",
       @"覆舟":@"覆舟",
       @"覆庇":@"覆庇",
+      @"答覆":@"答覆",
+      @"覆滅":@"覆灭",
+      @"𢃇":@"𢃇", // This is a 2x16 bit word.
     };
     
     return extraTable2;
