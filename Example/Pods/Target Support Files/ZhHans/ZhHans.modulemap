@@ -1,0 +1,6 @@
+framework module ZhHans {
+  umbrella header "ZhHans-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - ZhHans (1.2.0)
+
+DEPENDENCIES:
+  - ZhHans (from `../`)
+
+EXTERNAL SOURCES:
+  ZhHans:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ZhHans: bf62522242464d22c93edc4048a0d54f0964f8b4
+
+PODFILE CHECKSUM: b4181f268071f87ee9d2729c1cbf2af8e0acc0f3
+
+COCOAPODS: 1.11.2
