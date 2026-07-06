@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface ZhHansHelper : NSObject
 
 + (void) setPreferredEncoding:(NSString *)encoding;
@@ -29,4 +31,6 @@ extern NSString *_zh(NSString *t);
 #define IS_HANS ([ZhHansHelper preferredEncoding]==kZhHansEncoding)
 
 extern NSString *ZhEncodingDidChangeNotification;
+
+NS_ASSUME_NONNULL_END
 
